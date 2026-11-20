@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vocabulary Hero</title>
+
+<meta name="theme-color" content="#4f46e5">
+
+<link rel="manifest" href="manifest.json">
+<!-- entfernen --> 
+<link rel="stylesheet" href="styles.css">
+
+
+<style>
+:root{
+    --primary:#4f46e5;
+    --primary-light:#6366f1;
+    --success:#22c55e;
+    --warning:#f59e0b;
+    --danger:#ef4444;
+    --bg:#f4f6fb;
+    --card:#ffffff;
+    --text:#1e293b;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+    background:var(--bg);
+    color:var(--text);
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.app-title{
+    font-size:2rem;
+    font-weight:700;
+}
+
+.avatar{
+    font-size:4rem;
+    margin:10px 0;
+}
+
+.badge-name{
+    font-weight:bold;
+    color:var(--primary);
+}
+
+.progress-card{
+    background:var(--card);
+    border-radius:20px;
+    padding:20px;
+    margin-bottom:20px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.progress-bar{
+    background:#dbeafe;
+    height:18px;
+    border-radius:99px;
+    overflow:hidden;
+    margin-top:10px;
+}
+
+.progress-fill{
+    height:100%;
+    width:42%;
+    background:linear-gradient(
+        90deg,
+        #22c55e,
+        #10b981
+    );
+}
+
+.grid{
+    display:grid;
+    gap:16px;
+}
+
+.card{
+    background:white;
+    border-radius:22px;
+    padding:22px;
+    min-height:110px;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+    cursor:pointer;
+    transition:.2s;
+}
+
+.card:hover{
+    transform:translateY(-3px);
+}
+
+.card h2{
+    font-size:1.2rem;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#64748b;
+}
+
+.unit-progress{
+    margin-top:12px;
+    height:10px;
+    background:#e2e8f0;
+    border-radius:20px;
+}
+
+.unit-progress div{
+    height:100%;
+    border-radius:20px;
+    background:var(--primary);
+}
+
+.quick-stats{
+    display:grid;
+    gap:12px;
+    grid-template-columns:repeat(2,1fr);
+    margin-top:20px;
+}
+
+.stat{
+    background:white;
+    border-radius:20px;
+    padding:18px;
+    text-align:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+
+.stat-number{
+    font-size:1.5rem;
+    font-weight:bold;
+    margin-top:6px;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:center;
+}
+
+.large-btn{
+    border:none;
+    background:var(--primary);
+    color:white;
+    padding:16px 24px;
+    border-radius:16px;
+    font-size:1rem;
+    width:100%;
+    cursor:pointer;
+}
+
+
+.answer-btn{
+
+    width:100%;
+    margin-top:12px;
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#f8fafc;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.2s;
+}
+
+.answer-btn:hover{
+
+    background:#e2e8f0;
+}
+
+
+.recall-input{
+
+    width:100%;
+
+    padding:18px;
+
+    border:2px solid #cbd5e1;
+
+    border-radius:15px;
+
+    font-size:1rem;
+
+    margin-bottom:15px;
+}
+
+
+
+@media(min-width:900px){
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .quick-stats{
+        grid-template-columns:repeat(4,1fr);
+    }
+}
+
+.learn-card{
+
+    max-width:600px;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:24px;
+
+    box-shadow:
+        0 8px 20px rgba(0,0,0,.12);
+}
+
+.learn-title{
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+    text-align:center;
+}
+
+.learn-subtitle{
+
+    text-align:center;
+
+    color:#64748b;
+
+    margin-top:15px;
+
+    margin-bottom:25px;
+}
+
+.answer-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+}
+
+.answer-btn{
+
+    padding:18px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#eef2ff;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.2s;
+}
+
+.answer-btn:hover{
+
+    background:#c7d2fe;
+}
+
+.tricky-btn{
+
+    width:100%;
+
+    margin-top:20px;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#fef3c7;
+
+    cursor:pointer;
+
+    font-size:1rem;
+}
+
+
+.home-btn{
+
+    background:#4f46e5;
+
+    color:white;
+
+    border:none;
+
+    border-radius:14px;
+
+    padding:12px 18px;
+
+    margin-bottom:20px;
+
+    cursor:pointer;
+}
+
+
+</style>
+
+</head>
+
+
+
+
+<body>
+
+<div class="header">
+
+    <div class="avatar">
+        🌱
+    </div>
+
+    <div class="app-title">
+        Vocabulary Hero
+    </div>
+
+    <div class="badge-name">
+        Rookie
+    </div>
+
+</div>
+
+<div class="progress-card">
+
+    <h3>Gesamtfortschritt</h3>
+
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <p style="margin-top:10px;">
+        42 %
+    </p>
+
+</div>
+
+<div class="grid">
+
+    <div class="card">
+        <h2>📗 Pick-Up A</h2>
+        <p>42 Wörter</p>
+
+        <div class="unit-progress">
+            <div style="width:60%"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>📘 Pick-Up B</h2>
+        <p>31 Wörter</p>
+
+        <div class="unit-progress">
+            <div style="width:20%"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🏠 Unit 1</h2>
+        <p>noch nicht freigeschaltet</p>
+
+        <div class="unit-progress">
+            <div style="width:0%"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>🏫 Unit 2</h2>
+        <p>noch nicht freigeschaltet</p>
+
+        <div class="unit-progress">
+            <div style="width:0%"></div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>⭐ My Tricky Words</h2>
+        <p>14 schwierige Wörter</p>
+    </div>
+
+    <div class="card">
+        <h2>🏆 Badges</h2>
+        <p>3 freigeschaltet</p>
+    </div>
+
+</div>
+
+<div class="quick-stats">
+
+    <div class="stat">
+        <div>✅</div>
+        <div class="stat-number">168</div>
+        <div>Richtig</div>
+    </div>
+
+    <div class="stat">
+        <div>❌</div>
+        <div class="stat-number">23</div>
+        <div>Falsch</div>
+    </div>
+
+    <div class="stat">
+        <div>🔥</div>
+        <div class="stat-number">5</div>
+        <div>Tage</div>
+    </div>
+
+    <div class="stat">
+        <div>⭐</div>
+        <div class="stat-number">14</div>
+        <div>Tricky</div>
+    </div>
+
+</div>
+
+<div class="footer">
+
+    <button class="large-btn">
+        Jetzt lernen
+    </button>
+
+    <button
+        class="large-btn"
+        id="recallBtn"
+        style="margin-top:10px;">
+
+        Recall-Modus
+
+    </button>
+
+    <button
+        class="large-btn"
+        id="useItBtn"
+        style="margin-top:10px;">
+
+        Use-It-Modus
+
+    </button>
+
+</div>
+
+<script>
+if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+}
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>

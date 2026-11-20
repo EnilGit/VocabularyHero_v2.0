@@ -1,0 +1,974 @@
+[
+  {
+    "english":"at home",
+    "german":"zu Hause",
+    "unit":"Unit 1",
+    "example":"Luke is at home."
+  },
+  {
+    "english":"family",
+    "german":"Familie",
+    "unit":"Unit 1",
+    "example":"Pia and her parents are a family."
+  },
+  {
+    "english":"to live",
+    "german":"wohnen; leben",
+    "unit":"Unit 1",
+    "example":"We live in Greenwich."
+  },
+  {
+    "english":"flat",
+    "german":"Wohnung",
+    "unit":"Unit 1",
+    "example":"Pia's flat is in Cologne."
+  },
+  {
+    "english":"in the street",
+    "german":"in der Straße; auf der Straße",
+    "unit":"Unit 1",
+    "example":"Sherlock is in the street."
+  },
+  {
+    "english":"house",
+    "german":"Haus",
+    "unit":"Unit 1",
+    "example":"Luke's house is in Greenwich."
+  },
+  {
+    "english":"door",
+    "german":"Tür",
+    "unit":"Unit 1",
+    "example":"That's his house with the green door."
+  },
+  {
+    "english":"TV",
+    "german":"Fernsehen; Fernseher",
+    "unit":"Unit 1",
+    "example":"The TV is in the living room."
+  },
+  {
+    "english":"chair",
+    "german":"Stuhl; Sessel",
+    "unit":"Unit 1",
+    "example":"There is a chair in the room."
+  },
+  {
+    "english":"table",
+    "german":"Tisch",
+    "unit":"Unit 1",
+    "example":"Can you see a table in the picture?"
+  },
+  {
+    "english":"shower",
+    "german":"Dusche",
+    "unit":"Unit 1",
+    "example":"The shower is in the bathroom."
+  },
+  {
+    "english":"bath",
+    "german":"Bad; Badewanne",
+    "unit":"Unit 1",
+    "example":"It's fun in the bath."
+  },
+  {
+    "english":"toilet",
+    "german":"Toilette",
+    "unit":"Unit 1",
+    "example":"Where's the toilet, please?"
+  },
+  {
+    "english":"bed",
+    "german":"Bett",
+    "unit":"Unit 1",
+    "example":"I love my bed."
+  },
+  {
+    "english":"clock",
+    "german":"Uhr",
+    "unit":"Unit 1",
+    "example":"That's a nice clock."
+  },
+  {
+    "english":"wardrobe",
+    "german":"Kleiderschrank",
+    "unit":"Unit 1",
+    "example":"Luke's wardrobe is in his bedroom."
+  },
+  {
+    "english":"cupboard",
+    "german":"Küchenschrank; Schrank",
+    "unit":"Unit 1",
+    "example":"The cupboard is in the kitchen."
+  },
+  {
+    "english":"cooker",
+    "german":"Herd",
+    "unit":"Unit 1",
+    "example":"The cooker is in the kitchen."
+  },
+  {
+    "english":"living room",
+    "german":"Wohnzimmer",
+    "unit":"Unit 1",
+    "example":"The TV is in the living room."
+  },
+  {
+    "english":"bedroom",
+    "german":"Schlafzimmer",
+    "unit":"Unit 1",
+    "example":"Luke's wardrobe is in his bedroom."
+  },
+  {
+    "english":"kitchen",
+    "german":"Küche",
+    "unit":"Unit 1",
+    "example":"The cooker is in the kitchen."
+  },
+  {
+    "english":"bathroom",
+    "german":"Bad; Badezimmer",
+    "unit":"Unit 1",
+    "example":"The shower is in the bathroom."
+  },
+  {
+    "english":"good",
+    "german":"gut",
+    "unit":"Unit 1",
+    "example":"Luke and Sherlock are good friends."
+  },
+  {
+    "english":"biscuit",
+    "german":"Keks",
+    "unit":"Unit 1",
+    "example":"Here's a biscuit for you."
+  },
+  {
+    "english":"under",
+    "german":"unter",
+    "unit":"Unit 1",
+    "example":"Sherlock! Your ball is under the table."
+  },
+  {
+    "english":"to help",
+    "german":"helfen",
+    "unit":"Unit 1",
+    "example":"Can you help me, please?"
+  },
+  {
+    "english":"to collect",
+    "german":"sammeln",
+    "unit":"Unit 1",
+    "example":"Let's collect words for at home."
+  },
+  {
+    "english":"new",
+    "german":"neu",
+    "unit":"Unit 1",
+    "example":"I'm new in London."
+  },
+  {
+    "english":"small",
+    "german":"klein",
+    "unit":"Unit 1",
+    "example":"The hamster is small."
+  },
+{
+  "english":"sister",
+  "german":"Schwester",
+  "unit":"Unit 1",
+  "example":"Is Holly Luke's sister?"
+},
+{
+  "english":"little",
+  "german":"klein",
+  "unit":"Unit 1",
+  "example":"Jamie is Luke's little brother."
+},
+{
+  "english":"brother",
+  "german":"Bruder",
+  "unit":"Unit 1",
+  "example":"Jamie is Luke's brother."
+},
+{
+  "english":"father",
+  "german":"Vater",
+  "unit":"Unit 1",
+  "example":"Luke's father is English."
+},
+{
+  "english":"mother",
+  "german":"Mutter",
+  "unit":"Unit 1",
+  "example":"Your mother and father are your parents."
+},
+{
+  "english":"cousin",
+  "german":"Cousin; Cousine",
+  "unit":"Unit 1",
+  "example":"Jan is Luke's cousin."
+},
+{
+  "english":"only child",
+  "german":"Einzelkind",
+  "unit":"Unit 1",
+  "example":"Ben is an only child."
+},
+{
+  "english":"dad",
+  "german":"Papa",
+  "unit":"Unit 1",
+  "example":"Hello Dad!"
+},
+{
+  "english":"mum",
+  "german":"Mama",
+  "unit":"Unit 1",
+  "example":"Where's Luke's mum?"
+},
+{
+  "english":"uncle",
+  "german":"Onkel",
+  "unit":"Unit 1",
+  "example":"Uncle Jack is here."
+},
+{
+  "english":"aunt",
+  "german":"Tante",
+  "unit":"Unit 1",
+  "example":"Luke's Aunt Mila is his cousin's mum."
+},
+{
+  "english":"grandad",
+  "german":"Opa",
+  "unit":"Unit 1",
+  "example":"My grandad likes football."
+},
+{
+  "english":"grandma",
+  "german":"Oma",
+  "unit":"Unit 1",
+  "example":"My grandma lives in London."
+},
+{
+  "english":"family tree",
+  "german":"Stammbaum",
+  "unit":"Unit 1",
+  "example":"This is my family tree."
+},
+{
+  "english":"tell me about",
+  "german":"Erzähl mir von",
+  "unit":"Unit 1",
+  "example":"Tell me about your family."
+},
+{
+  "english":"nice",
+  "german":"nett",
+  "unit":"Unit 1",
+  "example":"Luke is nice."
+},
+{
+  "english":"cool",
+  "german":"cool",
+  "unit":"Unit 1",
+  "example":"Sherlock is cool."
+},
+{
+  "english":"great",
+  "german":"großartig",
+  "unit":"Unit 1",
+  "example":"That's great."
+},
+{
+  "english":"fun",
+  "german":"witzig; Spaß",
+  "unit":"Unit 1",
+  "example":"That's fun."
+},
+{
+  "english":"OK",
+  "german":"in Ordnung",
+  "unit":"Unit 1",
+  "example":"She's OK."
+},
+{
+  "english":"crazy",
+  "german":"verrückt",
+  "unit":"Unit 1",
+  "example":"The dog is crazy."
+},
+{
+  "english":"quiet",
+  "german":"ruhig",
+  "unit":"Unit 1",
+  "example":"Mice and rabbits are quiet animals."
+},
+{
+  "english":"tall",
+  "german":"groß",
+  "unit":"Unit 1",
+  "example":"The boy is tall."
+},
+{
+  "english":"friendly",
+  "german":"freundlich",
+  "unit":"Unit 1",
+  "example":"The dog is friendly."
+},
+{
+  "english":"clever",
+  "german":"schlau",
+  "unit":"Unit 1",
+  "example":"The squirrel is clever."
+},
+{
+  "english":"silly",
+  "german":"albern",
+  "unit":"Unit 1",
+  "example":"That is a silly idea."
+},
+{
+  "english":"noisy",
+  "german":"laut",
+  "unit":"Unit 1",
+  "example":"The parrot is noisy."
+},
+{
+  "english":"short",
+  "german":"klein",
+  "unit":"Unit 1",
+  "example":"The mouse is short."
+},
+{
+  "english":"guinea pig",
+  "german":"Meerschweinchen",
+  "unit":"Unit 1",
+  "example":"The guinea pig is small."
+},
+{
+  "english":"language",
+  "german":"Sprache",
+  "unit":"Unit 1",
+  "example":"English is a language."
+},
+{
+  "english":"wrong",
+  "german":"falsch",
+  "unit":"Unit 1",
+  "example":"That answer is wrong."
+},
+{
+  "english":"thanks",
+  "german":"Danke",
+  "unit":"Unit 1",
+  "example":"Thanks for your help."
+},
+{
+  "english":"very",
+  "german":"sehr",
+  "unit":"Unit 1",
+  "example":"Your house is very nice."
+},
+{
+  "english":"some",
+  "german":"einige; etwas",
+  "unit":"Unit 1",
+  "example":"Here are some holiday photos."
+},
+{
+  "english":"of",
+  "german":"von",
+  "unit":"Unit 1",
+  "example":"This is a photo of Pia."
+},
+{
+  "english":"to say hello",
+  "german":"grüßen",
+  "unit":"Unit 1",
+  "example":"Please say hello to your parents."
+},
+{
+  "english":"to",
+  "german":"zu; nach; auf",
+  "unit":"Unit 1",
+  "example":"Let's go to London."
+},
+{
+  "english":"problem",
+  "german":"Problem",
+  "unit":"Unit 1",
+  "example":"That's a big problem."
+},
+{
+  "english":"there is",
+  "german":"da ist; es gibt",
+  "unit":"Unit 1",
+  "example":"There is a dog."
+},
+{
+  "english":"there are",
+  "german":"da sind; es gibt",
+  "unit":"Unit 1",
+  "example":"There are two cats."
+},
+{
+  "english":"there",
+  "german":"da; dort",
+  "unit":"Unit 1",
+  "example":"Look over there."
+},
+{
+  "english":"garden",
+  "german":"Garten",
+  "unit":"Unit 1",
+  "example":"Luke has a garden."
+},
+{
+  "english":"behind",
+  "german":"hinter",
+  "unit":"Unit 1",
+  "example":"The garden is behind the house."
+},
+{
+  "english":"room",
+  "german":"Zimmer",
+  "unit":"Unit 1",
+  "example":"Luke is in his room."
+},
+{
+  "english":"home",
+  "german":"Zuhause",
+  "unit":"Unit 1",
+  "example":"Sherlock is at home."
+},
+{
+  "english":"picture",
+  "german":"Bild",
+  "unit":"Unit 1",
+  "example":"Look at the picture."
+},
+{
+  "english":"ball",
+  "german":"Ball",
+  "unit":"Unit 1",
+  "example":"The ball is under the table."
+},
+{
+  "english":"friend",
+  "german":"Freund; Freundin",
+  "unit":"Unit 1",
+  "example":"Luke and Sherlock are good friends."
+},
+{
+  "english":"photo",
+  "german":"Foto",
+  "unit":"Unit 1",
+  "example":"This is a photo of my family."
+},
+{
+  "english":"happy",
+  "german":"glücklich",
+  "unit":"Unit 1",
+  "example":"The family is happy."
+},
+{
+  "english":"help",
+  "german":"Hilfe",
+  "unit":"Unit 1",
+  "example":"Can you help me?"
+},
+{
+  "english":"welcome",
+  "german":"willkommen",
+  "unit":"Unit 1",
+  "example":"Welcome to our house."
+},
+{
+  "english":"roommate",
+  "german":"Mitbewohner",
+  "unit":"Unit 1",
+  "example":"My roommate is friendly."
+},
+{
+  "english":"pet",
+  "german":"Haustier",
+  "unit":"Unit 1",
+  "example":"Sherlock is Luke's pet."
+},
+{
+  "english":"dog basket",
+  "german":"Hundekorb",
+  "unit":"Unit 1",
+  "example":"The dog basket is in the living room."
+},
+{
+  "english":"window",
+  "german":"Fenster",
+  "unit":"Unit 1",
+  "example":"The window is open."
+},
+{
+  "english":"wall",
+  "german":"Wand",
+  "unit":"Unit 1",
+  "example":"There is a clock on the wall."
+},
+{
+  "english":"floor",
+  "german":"Fußboden",
+  "unit":"Unit 1",
+  "example":"The toys are on the floor."
+},
+{
+  "english":"next to",
+  "german":"neben",
+  "unit":"Unit 1",
+  "example":"The chair is next to the table."
+},
+{
+  "english":"in front of",
+  "german":"vor",
+  "unit":"Unit 1",
+  "example":"The car is in front of the house."
+},
+{
+  "english":"on the left",
+  "german":"links",
+  "unit":"Unit 1",
+  "example":"The wardrobe is on the left."
+},
+{
+  "english":"on the right",
+  "german":"rechts",
+  "unit":"Unit 1",
+  "example":"The cupboard is on the right."
+},
+{
+  "english":"middle",
+  "german":"Mitte",
+  "unit":"Unit 1",
+  "example":"The table is in the middle of the room."
+},
+{
+  "english":"homework",
+  "german":"Hausaufgaben",
+  "unit":"Unit 1",
+  "example":"I do my homework in my room."
+},
+{
+  "english":"book",
+  "german":"Buch",
+  "unit":"Unit 1",
+  "example":"The book is on the table."
+},
+{
+  "english":"school bag",
+  "german":"Schultasche",
+  "unit":"Unit 1",
+  "example":"My school bag is under the chair."
+},
+{
+  "english":"computer",
+  "german":"Computer",
+  "unit":"Unit 1",
+  "example":"The computer is in Luke's room."
+},
+{
+  "english":"lamp",
+  "german":"Lampe",
+  "unit":"Unit 1",
+  "example":"The lamp is next to the bed."
+},
+{
+  "english":"desk",
+  "german":"Schreibtisch",
+  "unit":"Unit 1",
+  "example":"The desk is in the bedroom."
+},
+{
+  "english":"shelf",
+  "german":"Regal",
+  "unit":"Unit 1",
+  "example":"The books are on the shelf."
+},
+{
+  "english":"toy",
+  "german":"Spielzeug",
+  "unit":"Unit 1",
+  "example":"The toy is on the floor."
+},
+{
+  "english":"open",
+  "german":"offen",
+  "unit":"Unit 1",
+  "example":"The window is open."
+},
+{
+  "english":"closed",
+  "german":"geschlossen",
+  "unit":"Unit 1",
+  "example":"The door is closed."
+},
+{
+  "english":"upstairs",
+  "german":"oben",
+  "unit":"Unit 1",
+  "example":"Luke's bedroom is upstairs."
+},
+{
+  "english":"downstairs",
+  "german":"unten",
+  "unit":"Unit 1",
+  "example":"The kitchen is downstairs."
+},
+{
+  "english":"thing",
+  "german":"Sache; Ding",
+  "unit":"Unit 1",
+  "example":"Can you see the things in the room?"
+},
+{
+  "english":"place",
+  "german":"Platz; Ort",
+  "unit":"Unit 1",
+  "example":"The ball is in the wrong place."
+},
+{
+  "english":"find",
+  "german":"finden",
+  "unit":"Unit 1",
+  "example":"Can you find Sherlock?"
+},
+{
+  "english":"look for",
+  "german":"suchen nach",
+  "unit":"Unit 1",
+  "example":"We are looking for the ball."
+},
+{
+  "english":"everybody",
+  "german":"alle",
+  "unit":"Unit 1",
+  "example":"Everybody likes Sherlock."
+},
+{
+  "english":"ready",
+  "german":"bereit",
+  "unit":"Unit 1",
+  "example":"Are you ready?"
+},
+{
+  "english":"again",
+  "german":"wieder",
+  "unit":"Unit 1",
+  "example":"Please say that again."
+},
+{
+  "english":"together",
+  "german":"zusammen",
+  "unit":"Unit 1",
+  "example":"Let's do it together."
+},
+{
+  "english":"mirror",
+  "german":"Spiegel",
+  "unit":"Unit 1",
+  "example":"The mirror is on the wall."
+},
+{
+  "english":"shelf",
+  "german":"Regal",
+  "unit":"Unit 1",
+  "example":"The books are on the shelf."
+},
+{
+  "english":"shelves",
+  "german":"Regale",
+  "unit":"Unit 1",
+  "example":"There are books on the shelves."
+},
+{
+  "english":"rug",
+  "german":"Teppich",
+  "unit":"Unit 1",
+  "example":"The rug is under the table."
+},
+{
+  "english":"guitar",
+  "german":"Gitarre",
+  "unit":"Unit 1",
+  "example":"Luke can play the guitar."
+},
+{
+  "english":"skateboard",
+  "german":"Skateboard",
+  "unit":"Unit 1",
+  "example":"The skateboard is next to the wardrobe."
+},
+{
+  "english":"poster",
+  "german":"Poster",
+  "unit":"Unit 1",
+  "example":"There is a poster on the wall."
+},
+{
+  "english":"cuddly toy",
+  "german":"Stofftier",
+  "unit":"Unit 1",
+  "example":"The cuddly toy is on the bed."
+},
+{
+  "english":"answer",
+  "german":"Antwort",
+  "unit":"Unit 1",
+  "example":"What's your answer?"
+},
+{
+  "english":"wall",
+  "german":"Wand",
+  "unit":"Unit 1",
+  "example":"There is a clock on the wall."
+},
+{
+  "english":"fridge",
+  "german":"Kühlschrank",
+  "unit":"Unit 1",
+  "example":"There's a small fridge in our kitchen."
+},
+{
+  "english":"address",
+  "german":"Adresse",
+  "unit":"Unit 1",
+  "example":"What's your address?"
+},
+{
+  "english":"roof",
+  "german":"Dach",
+  "unit":"Unit 1",
+  "example":"The roof is red."
+},
+{
+  "english":"window",
+  "german":"Fenster",
+  "unit":"Unit 1",
+  "example":"The window is open."
+},
+{
+  "english":"loft",
+  "german":"Dachboden",
+  "unit":"Unit 1",
+  "example":"There are old boxes in the loft."
+},
+{
+  "english":"hall",
+  "german":"Flur",
+  "unit":"Unit 1",
+  "example":"The hall is next to the kitchen."
+},
+{
+  "english":"cellar",
+  "german":"Keller",
+  "unit":"Unit 1",
+  "example":"The bikes are in the cellar."
+},
+{
+  "english":"terrace",
+  "german":"Terrasse",
+  "unit":"Unit 1",
+  "example":"We sit on the terrace."
+},
+{
+  "english":"balcony",
+  "german":"Balkon",
+  "unit":"Unit 1",
+  "example":"The flowers are on the balcony."
+},
+{
+  "english":"garage",
+  "german":"Garage",
+  "unit":"Unit 1",
+  "example":"The car is in the garage."
+},
+{
+  "english":"shed",
+  "german":"Schuppen",
+  "unit":"Unit 1",
+  "example":"The garden tools are in the shed."
+},
+{
+  "english":"busy",
+  "german":"beschäftigt",
+  "unit":"Unit 1",
+  "example":"I'm busy."
+},
+{
+  "english":"to explore",
+  "german":"erkunden",
+  "unit":"Unit 1",
+  "example":"Let's explore the park."
+},
+{
+  "english":"best",
+  "german":"beste; bester",
+  "unit":"Unit 1",
+  "example":"Olivia is Holly's best friend."
+},
+{
+  "english":"bag",
+  "german":"Tasche",
+  "unit":"Unit 1",
+  "example":"What's in Olivia's bag?"
+},
+{
+  "english":"maybe",
+  "german":"vielleicht",
+  "unit":"Unit 1",
+  "example":"Maybe it's Olivia."
+},
+{
+  "english":"after",
+  "german":"nach",
+  "unit":"Unit 1",
+  "example":"Let's go to the park after school."
+},
+{
+  "english":"visit",
+  "german":"Besuch",
+  "unit":"Unit 1",
+  "example":"Olivia's visit is fun."
+},
+{
+  "english":"outside",
+  "german":"draußen",
+  "unit":"Unit 1",
+  "example":"He's outside in the garden."
+},
+{
+  "english":"awful",
+  "german":"schrecklich",
+  "unit":"Unit 1",
+  "example":"This is awful!"
+},
+{
+  "english":"Don't worry!",
+  "german":"Keine Sorge!",
+  "unit":"Unit 1",
+  "example":"Don't worry! It's OK."
+},
+{
+  "english":"sentence",
+  "german":"Satz",
+  "unit":"Unit 1",
+  "example":"There are two words in the sentence."
+},
+{
+  "english":"right",
+  "german":"richtig",
+  "unit":"Unit 1",
+  "example":"Yes, that's right."
+},
+{
+  "english":"ending",
+  "german":"Ende",
+  "unit":"Unit 1",
+  "example":"What's the ending of the story?"
+},
+{
+  "english":"to talk about",
+  "german":"über etwas sprechen",
+  "unit":"Unit 1",
+  "example":"Talk about your family."
+},
+{
+  "english":"fantasy",
+  "german":"Fantasie",
+  "unit":"Unit 1",
+  "example":"It's a fantasy house."
+},
+{
+  "english":"to draw",
+  "german":"zeichnen",
+  "unit":"Unit 1",
+  "example":"Let's draw a picture."
+},
+{
+  "english":"step",
+  "german":"Schritt",
+  "unit":"Unit 1",
+  "example":"Follow the steps."
+},
+{
+  "english":"thirteen",
+  "german":"dreizehn",
+  "unit":"Unit 1",
+  "example":"Thirteen boys are in the picture."
+},
+{
+  "english":"fourteen",
+  "german":"vierzehn",
+  "unit":"Unit 1",
+  "example":"Fourteen girls are here."
+},
+{
+  "english":"fifteen",
+  "german":"fünfzehn",
+  "unit":"Unit 1",
+  "example":"Luke is fifteen."
+},
+{
+  "english":"sixteen",
+  "german":"sechzehn",
+  "unit":"Unit 1",
+  "example":"Sixteen chairs are in the hall."
+},
+{
+  "english":"seventeen",
+  "german":"siebzehn",
+  "unit":"Unit 1",
+  "example":"Seventeen books are on the shelf."
+},
+{
+  "english":"eighteen",
+  "german":"achtzehn",
+  "unit":"Unit 1",
+  "example":"Eighteen posters are in the room."
+},
+{
+  "english":"nineteen",
+  "german":"neunzehn",
+  "unit":"Unit 1",
+  "example":"Nineteen students are here."
+},
+{
+  "english":"twenty",
+  "german":"zwanzig",
+  "unit":"Unit 1",
+  "example":"There are twenty houses."
+},
+{
+  "english":"garden",
+  "german":"Garten",
+  "unit":"Unit 1",
+  "example":"Sherlock is outside in the garden."
+},
+{
+  "english":"garage",
+  "german":"Garage",
+  "unit":"Unit 1",
+  "example":"The car is in the garage."
+},
+{
+  "english":"balcony",
+  "german":"Balkon",
+  "unit":"Unit 1",
+  "example":"The flowers are on the balcony."
+},
+{
+  "english":"terrace",
+  "german":"Terrasse",
+  "unit":"Unit 1",
+  "example":"Let's sit on the terrace."
+}
+]

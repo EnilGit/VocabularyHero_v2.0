@@ -1,0 +1,290 @@
+[
+  {
+    "english":"day",
+    "german":"Tag",
+    "unit":"Pick-Up B",
+    "example":"It's a nice day for the boating lake."
+  },
+  {
+    "english":"happy",
+    "german":"glücklich; froh",
+    "unit":"Pick-Up B",
+    "example":"Lou is happy."
+  },
+  {
+    "english":"can't",
+    "german":"kann nicht",
+    "unit":"Pick-Up B",
+    "example":"I can't see him."
+  },
+  {
+    "english":"to meet",
+    "german":"treffen; sich treffen",
+    "unit":"Pick-Up B",
+    "example":"Let's meet in the park."
+  },
+  {
+    "english":"to show",
+    "german":"zeigen",
+    "unit":"Pick-Up B",
+    "example":"Please show me your new skates."
+  },
+  {
+    "english":"game",
+    "german":"Spiel",
+    "unit":"Pick-Up B",
+    "example":"I want to play a game."
+  },
+  {
+    "english":"to want",
+    "german":"wollen; mögen",
+    "unit":"Pick-Up B",
+    "example":"I want to play a game."
+  },
+  {
+    "english":"to play",
+    "german":"spielen",
+    "unit":"Pick-Up B",
+    "example":"Let's play football."
+  },
+  {
+    "english":"boring",
+    "german":"langweilig",
+    "unit":"Pick-Up B",
+    "example":"That's boring."
+  },
+  {
+    "english":"You're into sports.",
+    "german":"Du stehst auf Sport.",
+    "unit":"Pick-Up B",
+    "example":"You're into sports."
+  },
+  {
+    "english":"Try skating!",
+    "german":"Versuch es mal mit Inlineskaten.",
+    "unit":"Pick-Up B",
+    "example":"Try skating!"
+  },
+  {
+    "english":"fast",
+    "german":"schnell",
+    "unit":"Pick-Up B",
+    "example":"Not so fast!"
+  },
+  {
+    "english":"so",
+    "german":"so",
+    "unit":"Pick-Up B",
+    "example":"They're so quiet."
+  },
+  {
+    "english":"I'm sorry!",
+    "german":"Tut mir leid!",
+    "unit":"Pick-Up B",
+    "example":"I'm sorry!"
+  },
+  {
+    "english":"I'm fine.",
+    "german":"Mir geht's gut.",
+    "unit":"Pick-Up B",
+    "example":"I'm fine."
+  },
+  {
+    "english":"cute",
+    "german":"niedlich",
+    "unit":"Pick-Up B",
+    "example":"Lou is so cute."
+  },
+  {
+    "english":"lucky charm",
+    "german":"Glücksbringer",
+    "unit":"Pick-Up B",
+    "example":"Holly's lucky charm is pink."
+  },
+  {
+    "english":"text message",
+    "german":"SMS; Kurznachricht",
+    "unit":"Pick-Up B",
+    "example":"I got a text message."
+  },
+  {
+    "english":"reading",
+    "german":"Lesen",
+    "unit":"Pick-Up B",
+    "example":"Reading is fun."
+  },
+  {
+    "english":"music",
+    "german":"Musik",
+    "unit":"Pick-Up B",
+    "example":"I like music."
+  },
+  {
+    "english":"to paint",
+    "german":"malen",
+    "unit":"Pick-Up B",
+    "example":"I like to paint."
+  },
+  {
+    "english":"to go swimming",
+    "german":"schwimmen gehen",
+    "unit":"Pick-Up B",
+    "example":"Let's go swimming."
+  },
+  {
+    "english":"to read",
+    "german":"lesen",
+    "unit":"Pick-Up B",
+    "example":"Can you read this text?"
+  },
+  {
+    "english":"book",
+    "german":"Buch",
+    "unit":"Pick-Up B",
+    "example":"This is my favourite book."
+  },
+  {
+    "english":"to take photos",
+    "german":"fotografieren",
+    "unit":"Pick-Up B",
+    "example":"Please take a photo of me."
+  },
+  {
+    "english":"to watch",
+    "german":"anschauen; beobachten",
+    "unit":"Pick-Up B",
+    "example":"Let's watch the photos."
+  },
+{
+  "english":"thirty",
+  "german":"dreißig",
+  "unit":"Pick-Up B",
+  "example":"Thirty children are in the park."
+},
+{
+  "english":"forty",
+  "german":"vierzig",
+  "unit":"Pick-Up B",
+  "example":"Forty books are on the shelves."
+},
+{
+  "english":"fifty",
+  "german":"fünfzig",
+  "unit":"Pick-Up B",
+  "example":"Fifty people visit the park."
+},
+{
+  "english":"sixty",
+  "german":"sechzig",
+  "unit":"Pick-Up B",
+  "example":"Sixty points is a good score."
+},
+{
+  "english":"seventy",
+  "german":"siebzig",
+  "unit":"Pick-Up B",
+  "example":"Seventy students are here."
+},
+{
+  "english":"eighty",
+  "german":"achtzig",
+  "unit":"Pick-Up B",
+  "example":"Eighty children play football."
+},
+{
+  "english":"ninety",
+  "german":"neunzig",
+  "unit":"Pick-Up B",
+  "example":"Ninety bikes are in the picture."
+},
+{
+  "english":"one hundred",
+  "german":"einhundert",
+  "unit":"Pick-Up B",
+  "example":"One hundred people are at the event."
+},
+{
+  "english":"mirror",
+  "german":"Spiegel",
+  "unit":"Pick-Up B",
+  "example":"The mirror is on the wall."
+},
+{
+  "english":"rug",
+  "german":"Teppich",
+  "unit":"Pick-Up B",
+  "example":"The rug is under the table."
+},
+{
+  "english":"guitar",
+  "german":"Gitarre",
+  "unit":"Pick-Up B",
+  "example":"I can play the guitar."
+},
+{
+  "english":"skateboard",
+  "german":"Skateboard",
+  "unit":"Pick-Up B",
+  "example":"The skateboard is new."
+},
+{
+  "english":"poster",
+  "german":"Poster",
+  "unit":"Pick-Up B",
+  "example":"There is a poster on the wall."
+},
+{
+  "english":"toy",
+  "german":"Spielzeug",
+  "unit":"Pick-Up B",
+  "example":"The toy is on the floor."
+},
+{
+  "english":"cuddly toy",
+  "german":"Stofftier",
+  "unit":"Pick-Up B",
+  "example":"The cuddly toy is on the bed."
+},
+{
+  "english":"computer",
+  "german":"Computer",
+  "unit":"Pick-Up B",
+  "example":"I like computer games."
+},
+{
+  "english":"answer",
+  "german":"Antwort",
+  "unit":"Pick-Up B",
+  "example":"What's the answer?"
+},
+{
+  "english":"wall",
+  "german":"Wand",
+  "unit":"Pick-Up B",
+  "example":"The poster is on the wall."
+},
+{
+  "english":"address",
+  "german":"Adresse",
+  "unit":"Pick-Up B",
+  "example":"What's your address?"
+},
+{
+  "english":"to remember",
+  "german":"sich erinnern",
+  "unit":"Pick-Up B",
+  "example":"Do you remember the cabin boy's name?"
+},
+{
+  "english":"or",
+  "german":"oder",
+  "unit":"Pick-Up B",
+  "example":"Pia or Olivia?"
+},
+{
+  "english":"more",
+  "german":"mehr",
+  "unit":"Pick-Up B",
+  "example":"More dogs are great."
+}
+]

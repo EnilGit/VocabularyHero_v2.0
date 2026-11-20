@@ -1,0 +1,656 @@
+[
+  {
+    "english": "dog",
+    "german": "Hund",
+    "unit": "Pick-Up A",
+    "example": "Dogs are my friends."
+  },
+  {
+    "english": "cat",
+    "german": "Katze",
+    "unit": "Pick-Up A",
+    "example": "I'm scared of cats."
+  },
+  {
+    "english": "mouse",
+    "german": "Maus",
+    "unit": "Pick-Up A",
+    "example": "I'm a mouse."
+  },
+  {
+    "english": "school",
+    "german": "Schule",
+    "unit": "Pick-Up A",
+    "example": "This is my school."
+  },
+  {
+    "english": "family",
+    "german": "Familie",
+    "unit": "Unit 1",
+    "example": "Pia and her parents are a family."
+  },
+  {
+    "english": "park",
+    "german": "Park",
+    "unit": "Pick-Up A",
+    "example": "Greenwich Park is big."
+  },
+  {
+    "english": "boy",
+    "german": "Junge",
+    "unit": "Pick-Up A",
+    "example": "Look, a boy and a dog."
+  },
+  {
+    "english": "girl",
+    "german": "Mädchen",
+    "unit": "Pick-Up A",
+    "example": "Pia is a girl from Germany."
+  },
+  {
+    "english": "friend",
+    "german": "Freund",
+    "unit": "Pick-Up A",
+    "example": "Dogs are my friends."
+  },
+  {
+    "english": "animal",
+    "german": "Tier",
+    "unit": "Pick-Up A",
+    "example": "Cats and dogs are animals."
+  },
+  {
+    "english": "picture",
+    "german": "Bild",
+    "unit": "Pick-Up A",
+    "example": "My dog is in the picture."
+  },
+  {
+    "english": "colour",
+    "german": "Farbe",
+    "unit": "Pick-Up A",
+    "example": "What is your favourite colour?"
+  },
+  {
+    "english": "football",
+    "german": "Fußball",
+    "unit": "Pick-Up A",
+    "example": "Football is fun."
+  },
+  {
+    "english": "cycling",
+    "german": "Radfahren",
+    "unit": "Pick-Up A",
+    "example": "I don't like cycling."
+  },
+  {
+    "english": "squirrel",
+    "german": "Eichhörnchen",
+    "unit": "Pick-Up A",
+    "example": "Look, a squirrel!"
+  },
+{
+  "english":"black",
+  "german":"schwarz",
+  "unit":"Pick-Up A",
+  "example":"The dog is black."
+},
+{
+  "english":"blue",
+  "german":"blau",
+  "unit":"Pick-Up A",
+  "example":"My bike is blue."
+},
+{
+  "english":"brown",
+  "german":"braun",
+  "unit":"Pick-Up A",
+  "example":"The dog is brown."
+},
+{
+  "english":"green",
+  "german":"grün",
+  "unit":"Pick-Up A",
+  "example":"The door is green."
+},
+{
+  "english":"grey",
+  "german":"grau",
+  "unit":"Pick-Up A",
+  "example":"The mouse is grey."
+},
+{
+  "english":"orange",
+  "german":"orange",
+  "unit":"Pick-Up A",
+  "example":"The boat is orange."
+},
+{
+  "english":"pink",
+  "german":"rosa",
+  "unit":"Pick-Up A",
+  "example":"Boat number eight is pink."
+},
+{
+  "english":"purple",
+  "german":"lila",
+  "unit":"Pick-Up A",
+  "example":"Purple is my favourite colour."
+},
+{
+  "english":"red",
+  "german":"rot",
+  "unit":"Pick-Up A",
+  "example":"My bike is red."
+},
+{
+  "english":"white",
+  "german":"weiß",
+  "unit":"Pick-Up A",
+  "example":"The rabbit is white."
+},
+{
+  "english":"yellow",
+  "german":"gelb",
+  "unit":"Pick-Up A",
+  "example":"Yellow is a colour."
+},
+{
+  "english":"one",
+  "german":"eins",
+  "unit":"Pick-Up A",
+  "example":"One dog is in the park."
+},
+{
+  "english":"two",
+  "german":"zwei",
+  "unit":"Pick-Up A",
+  "example":"Two boys and a dog."
+},
+{
+  "english":"three",
+  "german":"drei",
+  "unit":"Pick-Up A",
+  "example":"Three cats are in the garden."
+},
+{
+  "english":"four",
+  "german":"vier",
+  "unit":"Pick-Up A",
+  "example":"Four and six is ten."
+},
+{
+  "english":"five",
+  "german":"fünf",
+  "unit":"Pick-Up A",
+  "example":"I have five books."
+},
+{
+  "english":"six",
+  "german":"sechs",
+  "unit":"Pick-Up A",
+  "example":"Four and six is ten."
+},
+{
+  "english":"seven",
+  "german":"sieben",
+  "unit":"Pick-Up A",
+  "example":"I am seven years old."
+},
+{
+  "english":"eight",
+  "german":"acht",
+  "unit":"Pick-Up A",
+  "example":"Boat number eight is pink."
+},
+{
+  "english":"nine",
+  "german":"neun",
+  "unit":"Pick-Up A",
+  "example":"Nine rabbits are in the park."
+},
+{
+  "english":"ten",
+  "german":"zehn",
+  "unit":"Pick-Up A",
+  "example":"Four and six is ten."
+},
+{
+  "english":"eleven",
+  "german":"elf",
+  "unit":"Pick-Up A",
+  "example":"Luke is eleven."
+},
+{
+  "english":"twelve",
+  "german":"zwölf",
+  "unit":"Pick-Up A",
+  "example":"There are twelve books."
+},
+{
+  "english":"number",
+  "german":"Nummer",
+  "unit":"Pick-Up A",
+  "example":"What is your favourite number?"
+},
+{
+  "english":"alphabet",
+  "german":"Alphabet",
+  "unit":"Pick-Up A",
+  "example":"The alphabet starts with A."
+},
+{
+  "english":"same",
+  "german":"gleich",
+  "unit":"Pick-Up A",
+  "example":"The dogs are the same."
+},
+{
+  "english":"quiet",
+  "german":"ruhig",
+  "unit":"Pick-Up A",
+  "example":"Mice and rabbits are quiet animals."
+},
+{
+  "english":"volleyball",
+  "german":"Volleyball",
+  "unit":"Pick-Up A",
+  "example":"Volleyball is a great sport."
+},
+{
+  "english":"inline skating",
+  "german":"Inlineskaten",
+  "unit":"Pick-Up A",
+  "example":"Inline skating is great."
+},
+{
+  "english":"horse",
+  "german":"Pferd",
+  "unit":"Pick-Up A",
+  "example":"The horse is in the park."
+},
+{
+  "english":"hamster",
+  "german":"Hamster",
+  "unit":"Pick-Up A",
+  "example":"My hamster is small."
+},
+{
+  "english":"worm",
+  "german":"Wurm",
+  "unit":"Pick-Up A",
+  "example":"Worms are OK."
+},
+{
+  "english":"parrot",
+  "german":"Papagei",
+  "unit":"Pick-Up A",
+  "example":"The parrot is green."
+},
+{
+  "english":"fish",
+  "german":"Fisch",
+  "unit":"Pick-Up A",
+  "example":"The fish is small."
+},
+{
+  "english":"bear",
+  "german":"Bär",
+  "unit":"Pick-Up A",
+  "example":"The bear is big."
+},
+{
+  "english":"budgie",
+  "german":"Wellensittich",
+  "unit":"Pick-Up A",
+  "example":"The budgie is blue."
+},
+{
+  "english":"scared",
+  "german":"ängstlich",
+  "unit":"Pick-Up A",
+  "example":"I'm scared of cats."
+},
+{
+  "english":"nice",
+  "german":"nett",
+  "unit":"Pick-Up A",
+  "example":"You're a nice dog."
+},
+{
+  "english":"friends",
+  "german":"Freunde",
+  "unit":"Pick-Up A",
+  "example":"Dogs are my friends."
+},
+{
+  "english":"boating lake",
+  "german":"See mit Booten",
+  "unit":"Pick-Up A",
+  "example":"I like the boating lake."
+},
+{
+  "english":"sport",
+  "german":"Sport",
+  "unit":"Pick-Up A",
+  "example":"Football is my favourite sport."
+},
+{
+  "english":"favourite",
+  "german":"Lieblings-",
+  "unit":"Pick-Up A",
+  "example":"What is your favourite colour?"
+},
+{
+  "english":"football",
+  "german":"Fußball",
+  "unit":"Pick-Up A",
+  "example":"Football is fun."
+},
+{
+  "english":"volleyball",
+  "german":"Volleyball",
+  "unit":"Pick-Up A",
+  "example":"Volleyball is a great sport."
+},
+{
+  "english":"inline skating",
+  "german":"Inlineskaten",
+  "unit":"Pick-Up A",
+  "example":"Inline skating is great."
+},
+{
+  "english":"close",
+  "german":"knapp",
+  "unit":"Pick-Up A",
+  "example":"That was close."
+},
+{
+  "english":"people",
+  "german":"Menschen",
+  "unit":"Pick-Up A",
+  "example":"People like dogs and cats."
+},
+{
+  "english":"thing",
+  "german":"Ding",
+  "unit":"Pick-Up A",
+  "example":"Talk about the things in the picture."
+},
+{
+  "english":"please",
+  "german":"bitte",
+  "unit":"Pick-Up A",
+  "example":"Please listen."
+},
+{
+  "english":"phone number",
+  "german":"Telefonnummer",
+  "unit":"Pick-Up A",
+  "example":"Say your phone number."
+},
+{
+  "english":"listen",
+  "german":"zuhören",
+  "unit":"Pick-Up A",
+  "example":"Please listen."
+},
+{
+  "english":"say",
+  "german":"sagen",
+  "unit":"Pick-Up A",
+  "example":"Say your name."
+},
+{
+  "english":"colour",
+  "german":"Farbe",
+  "unit":"Pick-Up A",
+  "example":"What colour is Sherlock?"
+},
+{
+  "english":"puzzle",
+  "german":"Rätsel",
+  "unit":"Pick-Up A",
+  "example":"Here's a puzzle about Greenwich."
+},
+{
+  "english":"cool",
+  "german":"cool",
+  "unit":"Pick-Up A",
+  "example":"The dog is cool."
+},
+{
+  "english":"clever",
+  "german":"schlau",
+  "unit":"Pick-Up A",
+  "example":"The squirrel is clever."
+},
+{
+  "english":"crazy",
+  "german":"verrückt",
+  "unit":"Pick-Up A",
+  "example":"My dog is crazy."
+},
+{
+  "english":"friendly",
+  "german":"freundlich",
+  "unit":"Pick-Up A",
+  "example":"The rabbit is friendly."
+},
+{
+  "english":"noisy",
+  "german":"laut",
+  "unit":"Pick-Up A",
+  "example":"The parrot is noisy."
+},
+{
+  "english":"small",
+  "german":"klein",
+  "unit":"Pick-Up A",
+  "example":"The hamster is small."
+},
+{
+  "english":"tall",
+  "german":"groß",
+  "unit":"Pick-Up A",
+  "example":"The boy is tall."
+},
+{
+  "english":"short",
+  "german":"klein",
+  "unit":"Pick-Up A",
+  "example":"The mouse is short."
+},
+{
+  "english":"language",
+  "german":"Sprache",
+  "unit":"Pick-Up A",
+  "example":"English is a language."
+},
+{
+  "english":"English",
+  "german":"Englisch",
+  "unit":"Pick-Up A",
+  "example":"English is a language."
+},
+{
+  "english":"German",
+  "german":"Deutsch",
+  "unit":"Pick-Up A",
+  "example":"German students are lucky."
+},
+{
+  "english":"only",
+  "german":"nur",
+  "unit":"Pick-Up A",
+  "example":"There is only one dog."
+},
+{
+  "english":"wrong",
+  "german":"falsch",
+  "unit":"Pick-Up A",
+  "example":"That answer is wrong."
+},
+{
+  "english":"some",
+  "german":"einige",
+  "unit":"Pick-Up A",
+  "example":"Here are some holiday photos."
+},
+{
+  "english":"photo",
+  "german":"Foto",
+  "unit":"Pick-Up A",
+  "example":"This is a photo of Pia."
+},
+{
+  "english":"to say hello",
+  "german":"grüßen",
+  "unit":"Pick-Up A",
+  "example":"Please say hello to your parents."
+},
+{
+  "english":"garden",
+  "german":"Garten",
+  "unit":"Pick-Up A",
+  "example":"There is a garden behind the house."
+},
+{
+  "english":"behind",
+  "german":"hinter",
+  "unit":"Pick-Up A",
+  "example":"The garden is behind the house."
+},
+{
+  "english":"car",
+  "german":"Auto",
+  "unit":"Pick-Up A",
+  "example":"There is a car in front of the house."
+},
+{
+  "english":"everywhere",
+  "german":"überall",
+  "unit":"Pick-Up A",
+  "example":"The rabbits are everywhere."
+},
+{
+  "english":"floor",
+  "german":"Fußboden",
+  "unit":"Pick-Up A",
+  "example":"The toys are on the floor."
+},
+{
+  "english":"next to",
+  "german":"neben",
+  "unit":"Pick-Up A",
+  "example":"The dog is next to Luke."
+},
+{
+  "english":"in front of",
+  "german":"vor",
+  "unit":"Pick-Up A",
+  "example":"The car is in front of the house."
+},
+{
+  "english":"listen",
+  "german":"zuhören",
+  "unit":"Pick-Up A",
+  "example":"Please listen."
+},
+{
+  "english":"idea",
+  "german":"Idee",
+  "unit":"Pick-Up A",
+  "example":"That is a great idea."
+},
+{
+  "english":"own",
+  "german":"eigene",
+  "unit":"Pick-Up A",
+  "example":"This is my own room."
+},
+{
+  "english":"on the right",
+  "german":"rechts",
+  "unit":"Pick-Up A",
+  "example":"The cupboard is on the right."
+},
+{
+  "english":"on the left",
+  "german":"links",
+  "unit":"Pick-Up A",
+  "example":"The wardrobe is on the left."
+},
+{
+  "english":"middle",
+  "german":"Mitte",
+  "unit":"Pick-Up A",
+  "example":"The table is in the middle of the room."
+},
+{
+  "english":"family",
+  "german":"Familie",
+  "unit":"Unit 1",
+  "example":"Pia and her parents are a family."
+},
+{
+  "english":"father",
+  "german":"Vater",
+  "unit":"Unit 1",
+  "example":"Luke's father is English."
+},
+{
+  "english":"mother",
+  "german":"Mutter",
+  "unit":"Unit 1",
+  "example":"Your mother and father are your parents."
+},
+{
+  "english":"cousin",
+  "german":"Cousin",
+  "unit":"Unit 1",
+  "example":"Jan is Luke's cousin."
+},
+{
+  "english":"uncle",
+  "german":"Onkel",
+  "unit":"Unit 1",
+  "example":"Uncle Jack is here."
+},
+{
+  "english":"aunt",
+  "german":"Tante",
+  "unit":"Unit 1",
+  "example":"Luke's Aunt Mila is his cousin's mum."
+},
+{
+  "english":"mum",
+  "german":"Mama",
+  "unit":"Unit 1",
+  "example":"Hello, Mum!"
+},
+{
+  "english":"dad",
+  "german":"Papa",
+  "unit":"Unit 1",
+  "example":"Hello, Dad!"
+},
+{
+  "english":"grandma",
+  "german":"Oma",
+  "unit":"Unit 1",
+  "example":"My grandma lives in London."
+},
+{
+  "english":"grandad",
+  "german":"Opa",
+  "unit":"Unit 1",
+  "example":"My grandad likes football."
+},
+{
+  "english":"family tree",
+  "german":"Stammbaum",
+  "unit":"Unit 1",
+  "example":"This is my family tree."
+}
+]
