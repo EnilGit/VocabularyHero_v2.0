@@ -1,5 +1,5 @@
 const CACHE_NAME =
-    "VocabularyHero";
+    "VocabularyHero-v2";
 
 const FILES_TO_CACHE = [
 
