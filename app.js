@@ -1058,35 +1058,65 @@ if(learningState){
 
         <div class="progress-card">
 
-            <h3>Punkte</h3>
+            <h3
+                style="
+                    text-align:center;
+                    margin-bottom:10px;
+                ">
+                Punkte
+            </h3>
 
             <div style="
                 font-size:2rem;
                 font-weight:bold;
                 margin-top:10px;
+                text-align:center;
+                ">
+                    ${score}
+            </div>
+
+        </div>
+
+<div class="quick-stats">
+
+    <div class="stat">
+
+        <div>⭐</div>
+
+        <div class="stat-number">
+            ${
+                JSON.parse(
+                    localStorage.getItem(
+                        "trickyWords"
+                    )
+                )?.length || 0
+            }
+        </div>
+
+        <div>Tricky</div>
+
+    </div>
+
+    <div class="stat">
+
+        <div>🏅</div>
+
+        <div class="stat-number">
+            ${getBadgeCount()}
+            <span style="
+                font-size:0.8rem;
+                color:#64748b;
             ">
-                ${score}
-            </div>
-
+                /5
+            </span>
         </div>
 
-        <div class="quick-stats">
+        <div>Badges</div>
 
-            <div class="stat">
-                <div>⭐</div>
-                <div class="stat-number">
-                    ${
-                        JSON.parse(
-                            localStorage.getItem(
-                                "trickyWords"
-                            )
-                        )?.length || 0
-                    }
-                </div>
-                <div>Tricky</div>
-            </div>
+    </div>
 
-        </div>
+</div>
+
 
         <div class="footer">
 
@@ -1187,6 +1217,28 @@ function saveLearningState(){
         })
     );
 }
+
+
+
+function getBadgeCount(){
+
+    let count = 1;
+
+    if(score >= 10)
+        count++;
+
+    if(score >= 25)
+        count++;
+
+    if(score >= 50)
+        count++;
+
+    if(score >= 100)
+        count++;
+
+    return count;
+}
+
 
 
 
