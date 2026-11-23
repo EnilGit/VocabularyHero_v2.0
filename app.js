@@ -323,11 +323,16 @@ function startRecall() {
 
 
             <div class="learn-title">
-                ${word.english}
+                ${getQuestion(word)}
             </div>
 
             <div class="learn-subtitle">
-                Gib die deutsche Übersetzung ein
+                ${
+                    direction === "EN_DE"
+                    ? "Gib die deutsche Übersetzung ein"
+                    : "Gib die englische Übersetzung ein - in English, please!"
+                }
+          
             </div>
 
             <input
@@ -339,7 +344,7 @@ function startRecall() {
             <button
                 class="answer-btn"
                 onclick="checkRecall(
-                    '${word.german}'
+                    '${getAnswer(word)}'
                 )">
 
                 Prüfen
