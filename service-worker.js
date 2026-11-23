@@ -1,18 +1,21 @@
 const CACHE_NAME =
-    "VocabularyHero-v3";
+    "VocabularyHero-v4";
 
 const FILES_TO_CACHE = [
 
     "./",
     "./index.html",
     "./app.js",
-    "./styles.css",
 
     "./manifest.json",
 
     "./vocabulary.json",
     "./pickUpB.json",
-    "./unit1.json"
+    "./unit1.json",
+    "./unit2_station1.json",
+    "./unit2_skills.json",
+    "./unit2_checkout.json"
+
 
 ];
 

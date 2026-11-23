@@ -52,14 +52,14 @@ function shuffle(array) {
 
 
 
-function getQuestion(word){
+function getQuestion(word) {
 
     return direction === "EN_DE"
         ? word.english
         : word.german;
 }
 
-function getAnswer(word){
+function getAnswer(word) {
 
     return direction === "EN_DE"
         ? word.german
@@ -74,9 +74,9 @@ function startRecognize(wordPool = vocabulary) {
 
     const word =
         wordPool[
-            Math.floor(
-                Math.random() * wordPool.length
-            )
+        Math.floor(
+            Math.random() * wordPool.length
+        )
         ];
 
     currentWord = word;
@@ -97,21 +97,21 @@ function startRecognize(wordPool = vocabulary) {
         uniqueAnswers.length
         &&
         answers.length < 4
-    ){
+    ) {
 
         const randomAnswer =
             uniqueAnswers[
-                Math.floor(
-                    Math.random() *
-                    uniqueAnswers.length
-                )
+            Math.floor(
+                Math.random() *
+                uniqueAnswers.length
+            )
             ];
 
-        if(
+        if (
             !answers.includes(
                 randomAnswer
             )
-        ){
+        ) {
             answers.push(
                 randomAnswer
             );
@@ -205,7 +205,7 @@ function startRecognize(wordPool = vocabulary) {
 
 
 
-function getWordsByUnit(unit){
+function getWordsByUnit(unit) {
 
     return vocabulary.filter(
         word => word.unit === unit
@@ -214,7 +214,7 @@ function getWordsByUnit(unit){
 
 
 
-function selectUnit(unit){
+function selectUnit(unit) {
 
     currentUnit = unit;
 
@@ -276,10 +276,10 @@ function startRecall() {
 
     currentMode = "recall";
 
-    if(
+    if (
         !currentWordPool ||
         currentWordPool.length === 0
-    ){
+    ) {
         alert(
             "Keine Wörter für diese Unit gefunden."
         );
@@ -288,9 +288,9 @@ function startRecall() {
 
     const word =
         currentWordPool[
-            Math.floor(
-                Math.random() * currentWordPool.length
-            )
+        Math.floor(
+            Math.random() * currentWordPool.length
+        )
         ];
 
     currentWord = word;
@@ -356,10 +356,10 @@ function startUseIt() {
 
     currentMode = "useit";
 
-    if(
+    if (
         !currentWordPool ||
         currentWordPool.length === 0
-    ){
+    ) {
         alert(
             "Keine Wörter für diese Unit gefunden."
         );
@@ -369,200 +369,426 @@ function startUseIt() {
     const word =
         currentWordPool[
             Math.floor(
-                Math.random() * currentWordPool.length
+                Math.random() *
+                currentWordPool.length
             )
         ];
 
     currentWord = word;
 
-    const hint =
-        word.english.charAt(0);
+    const answers = [
+        word.english
+    ];
 
-    let sentence = word.example;
+    while (
+        answers.length <
+        Math.min(
+            4,
+            currentWordPool.length
+        )
+    ) {
+
+        const randomWord =
+            currentWordPool[
+                Math.floor(
+                    Math.random() *
+                    currentWordPool.length
+                )
+            ];
+
+        if (
+            !answers.includes(
+                randomWord.english
+            )
+        ) {
+            answers.push(
+                randomWord.english
+            );
+        }
+    }
+
+    const mixedAnswers =
+        shuffle(answers);
+
+    let sentence =
+        word.example;
 
     sentence = sentence.replace(
-        new RegExp(word.english, "i"),
+        new RegExp(
+            word.english,
+            "i"
+        ),
         "_____"
     );
 
-    document.body.innerHTML = `
+    let html = `
 
         <div class="learn-card">
 
             <button
                 class="home-btn"
                 onclick="renderHomePage()">
+
                 🏠 Home
+
             </button>
 
             <div style="text-align:right;">
+
                 ${getAvatarEmoji()}
                 ${getAvatar()}
-            </div>
 
-            <div class="learn-title">
-                ${word.english}
             </div>
 
             <div style="
                 text-align:center;
-                color:#64748b;
-                margin-bottom:20px;
-            ">
-                ${word.german}
-            </div>
-
-            <div style="
-                background:#eef2ff;
-                padding:12px;
-                border-radius:12px;
-                text-align:center;
-                margin-bottom:20px;
-            ">
-                Setze das Wort sinnvoll in den Satz ein.
-            </div>
-
-            <div style="
+                margin:20px;
                 font-size:1.2rem;
-                text-align:center;
-                margin-bottom:20px;
             ">
+
                 ${sentence}
+
             </div>
 
-            <div style="
-                text-align:center;
-                margin-bottom:20px;
-            ">
-                Tipp: ${hint}...
-            </div>
+            <div class="answer-container">
 
-            <input
-                id="useInput"
-                class="recall-input"
-                placeholder="Wort eingeben">
+    `;
+
+    mixedAnswers.forEach(answer => {
+
+        html += `
 
             <button
                 class="answer-btn"
-                onclick="checkUseIt('${word.english}')">
+                onclick="
+                    checkUseIt(
+                        '${answer}',
+                        '${word.english}'
+                    )
+                ">
 
-                Prüfen
+                ${answer}
 
             </button>
 
+        `;
+
+    });
+
+    html += `
+
+            </div>
+
         </div>
+
     `;
+
+    document.body.innerHTML =
+        html;
 }
 
 
+    function checkUseIt(
+        selected,
+        correct
+    ) {
 
-function checkUseIt(correct){
+        if (
+            selected === correct
+        ) {
 
-    const answer =
-        document
-            .getElementById("useInput")
-            .value
-            .trim()
-            .toLowerCase();
+            score++;
 
-    if(answer === correct.toLowerCase()){
+            correctAnswers++;
 
-        score++;
+            localStorage.setItem(
+                "correctAnswers",
+                correctAnswers
+            );
 
-        correctAnswers++;
+            localStorage.setItem(
+                "score",
+                score
+            );
 
-        localStorage.setItem(
-            "correctAnswers",
-            correctAnswers
-        );
+            alert(
+                "✅ Richtig!"
+            );
 
-        localStorage.setItem(
-            "score",
-            score
-        );
+        } else {
 
-        alert(
-            "✅ Richtig!"
-        );
-    }
-    else{
+            wrongAnswers++;
 
-        wrongAnswers++;
+            localStorage.setItem(
+                "wrongAnswers",
+                wrongAnswers
+            );
 
-        localStorage.setItem(
-            "wrongAnswers",
-            wrongAnswers
-        );
+            alert(
+                "❌ Falsch!\n\n" +
+                "Richtige Lösung:\n" +
+                correct
+            );
+        }
 
-        alert(
-            "❌ Falsch!\n\n" +
-            "Richtige Lösung:\n" +
-            correct
-        );
-    }
+        saveLearningState();
 
-    saveLearningState();
-
-    startUseIt(currentTrainingPool);
-}
-
-
-
-function checkRecall(correct) {
-
-    const answer =
-        document
-            .getElementById("answerInput")
-            .value
-            .trim()
-            .toLowerCase();
-
-    if(answer === correct.toLowerCase()){
-
-        score++;
-
-        correctAnswers++;
-
-        localStorage.setItem(
-            "correctAnswers",
-            correctAnswers
-        );
-
-        localStorage.setItem(
-            "score",
-            score
-        );
-
-        alert(
-            "✅ Richtig!"
-        );
-    }
-    else{
-
-        wrongAnswers++;
-
-        localStorage.setItem(
-            "wrongAnswers",
-            wrongAnswers
-        );
-
-        alert(
-            "❌ Falsch\n\n" +
-            "Richtige Antwort:\n" +
-            correct
-        );
+        startUseIt(currentTrainingPool);
     }
 
-    saveLearningState();
-
-    startRecall(currentTrainingPool);
-}
 
 
+    function checkRecall(correct) {
 
-function checkAnswer(selected, correct) {
+        const answer =
+            document
+                .getElementById("answerInput")
+                .value
+                .trim()
+                .toLowerCase();
 
-    if (selected === correct) {
+        if (answer === correct.toLowerCase()) {
+
+            score++;
+
+            correctAnswers++;
+
+            localStorage.setItem(
+                "correctAnswers",
+                correctAnswers
+            );
+
+            localStorage.setItem(
+                "score",
+                score
+            );
+
+            alert(
+                "✅ Richtig!"
+            );
+        }
+        else {
+
+            wrongAnswers++;
+
+            localStorage.setItem(
+                "wrongAnswers",
+                wrongAnswers
+            );
+
+            alert(
+                "❌ Falsch\n\n" +
+                "Richtige Antwort:\n" +
+                correct
+            );
+        }
+
+        saveLearningState();
+
+        startRecall(currentTrainingPool);
+    }
+
+
+
+    function checkAnswer(selected, correct) {
+
+        if (selected === correct) {
+
+            const trickyWords =
+                JSON.parse(
+                    localStorage.getItem(
+                        "trickyWords"
+                    )
+                ) || [];
+
+
+            score++;
+
+            correctAnswers++;
+
+            localStorage.setItem(
+                "correctAnswers",
+                correctAnswers
+            );
+
+            localStorage.setItem(
+                "score",
+                score
+            );
+
+            if (
+                trickyWords.includes(
+                    currentWord.english
+                )
+            ) {
+
+                let trickyProgress =
+                    JSON.parse(
+                        localStorage.getItem(
+                            "trickyProgress"
+                        )
+                    ) || {};
+
+                trickyProgress[
+                    currentWord.english
+                ] =
+                    (
+                        trickyProgress[
+                        currentWord.english
+                        ] || 0
+                    ) + 1;
+
+                localStorage.setItem(
+                    "trickyProgress",
+                    JSON.stringify(
+                        trickyProgress
+                    )
+                );
+
+                if (
+                    trickyProgress[
+                    currentWord.english
+                    ] >= 3
+                ) {
+
+                    removeTrickyWord(
+                        currentWord.english
+                    );
+
+                    alert(
+                        "🎉 Tricky Word gemeistert!\n\n" +
+                        currentWord.english
+                    );
+                }
+
+            }
+
+            alert(
+                "✅ Richtig!\n\nPunkte: "
+                + score
+            );
+
+        } else {
+
+            wrongAnswers++;
+
+            localStorage.setItem(
+                "wrongAnswers",
+                wrongAnswers
+            );
+
+            alert(
+                "❌ Falsch!\n\nRichtige Antwort:\n" +
+                correct
+            );
+        }
+
+        saveLearningState();
+
+        startRecognize(
+            currentTrainingPool
+        );
+    }
+
+
+
+
+    function saveLearningState() {
+
+        localStorage.setItem(
+            "learningState",
+
+            JSON.stringify({
+
+                unit: currentUnit,
+                mode: currentMode,
+                word: currentWord?.english || null,
+                timestamp: Date.now()
+
+            })
+        );
+    }
+
+
+
+    function continueLearning() {
+
+        const state =
+            JSON.parse(
+                localStorage.getItem(
+                    "learningState"
+                )
+            );
+
+        if (!state) {
+
+            alert(
+                "Kein Lernstand vorhanden."
+            );
+
+            return;
+        }
+
+        currentUnit = state.unit;
+        currentMode = state.mode;
+        currentWordPool =
+            getWordsByUnit(
+                currentUnit
+            );
+
+        switch (currentMode) {
+
+            case "recognize":
+                startRecognize(
+                    currentWordPool
+                );
+                break;
+
+            case "recall":
+                startRecall();
+                break;
+
+            case "useit":
+                startUseIt();
+                break;
+        }
+    }
+
+
+
+    function saveTrickyWord(word) {
+
+        let trickyWords =
+            JSON.parse(
+                localStorage.getItem("trickyWords")
+            ) || [];
+
+        if (!trickyWords.includes(word)) {
+
+            trickyWords.push(word);
+
+            localStorage.setItem(
+                "trickyWords",
+                JSON.stringify(trickyWords)
+            );
+
+            alert(
+                "⭐ '" +
+                word +
+                "' gespeichert!"
+            );
+        }
+        else {
+
+            alert(
+                "⭐ Bereits vorhanden."
+            );
+        }
+    }
+
+
+
+    function showTrickyWords() {
 
         const trickyWords =
             JSON.parse(
@@ -571,212 +797,16 @@ function checkAnswer(selected, correct) {
                 )
             ) || [];
 
+        if (trickyWords.length === 0) {
 
-        score++;
-
-        correctAnswers++;
-
-        localStorage.setItem(
-            "correctAnswers",
-            correctAnswers
-        );
-
-        localStorage.setItem(
-            "score",
-            score
-        );
-
-        if(
-            trickyWords.includes(
-                currentWord.english
-            )
-        ){
-
-            let trickyProgress =
-                JSON.parse(
-                    localStorage.getItem(
-                        "trickyProgress"
-                    )
-                ) || {};
-
-            trickyProgress[
-                currentWord.english
-            ] =
-                (
-                   trickyProgress[
-                        currentWord.english
-                    ] || 0
-                ) + 1;
-
-            localStorage.setItem(
-                "trickyProgress",
-                JSON.stringify(
-                    trickyProgress
-                )
+            alert(
+                "Keine Tricky Words gespeichert."
             );
 
-            if(
-                trickyProgress[
-                    currentWord.english
-                ] >= 3
-            ){
-
-                removeTrickyWord(
-                    currentWord.english
-                );
-
-                alert(
-                    "🎉 Tricky Word gemeistert!\n\n" +
-                    currentWord.english
-                );
-            }
-
+            return;
         }
 
-        alert(
-            "✅ Richtig!\n\nPunkte: "
-            + score
-        );
-
-    } else {
-
-        wrongAnswers++;
-
-        localStorage.setItem(
-            "wrongAnswers",
-            wrongAnswers
-        );
-
-        alert(
-            "❌ Falsch!\n\nRichtige Antwort:\n" +
-            correct
-        );
-    }
-
-    saveLearningState();
-
-    startRecognize(
-        currentTrainingPool
-    );
-}
-
-
-
-
-function saveLearningState(){
-
-    localStorage.setItem(
-        "learningState",
-
-        JSON.stringify({
-
-            unit: currentUnit,
-            mode: currentMode,
-            word: currentWord?.english || null,
-            timestamp: Date.now()
-
-        })
-    );
-}
-
-
-
-function continueLearning(){
-
-    const state =
-        JSON.parse(
-            localStorage.getItem(
-                "learningState"
-            )
-        );
-
-    if(!state){
-
-        alert(
-            "Kein Lernstand vorhanden."
-        );
-
-        return;
-    }
-
-    currentUnit = state.unit;
-    currentMode = state.mode;
-    currentWordPool =
-        getWordsByUnit(
-            currentUnit
-        );
-
-    switch(currentMode){
-
-        case "recognize":
-            startRecognize(
-                currentWordPool
-            );
-            break;
-
-        case "recall":
-            startRecall();
-            break;
-
-        case "useit":
-            startUseIt();
-            break;
-    }
-}
-
-
-
-function saveTrickyWord(word){
-
-    let trickyWords =
-        JSON.parse(
-            localStorage.getItem("trickyWords")
-        ) || [];
-
-    if(!trickyWords.includes(word)){
-
-        trickyWords.push(word);
-
-        localStorage.setItem(
-            "trickyWords",
-            JSON.stringify(trickyWords)
-        );
-
-        alert(
-            "⭐ '" +
-            word +
-            "' gespeichert!"
-        );
-    }
-    else{
-
-        alert(
-            "⭐ Bereits vorhanden."
-        );
-    }
-}
-
-
-
-function showTrickyWords(){
-
-    const trickyWords =
-        JSON.parse(
-            localStorage.getItem(
-                "trickyWords"
-            )
-        ) || [];
-
-    if(trickyWords.length === 0){
-
-        alert(
-            "Keine Tricky Words gespeichert."
-        );
-
-        return;
-    }
-
-    let html = `
+        let html = `
 
         <div class="learn-card">
 
@@ -806,9 +836,9 @@ function showTrickyWords(){
             <hr style="margin:20px 0;">
     `;
 
-    trickyWords.forEach(word => {
+        trickyWords.forEach(word => {
 
-        html += `
+            html += `
 
             <div
                 style="
@@ -833,9 +863,9 @@ function showTrickyWords(){
             </div>
 
         `;
-    });
+        });
 
-    html += `
+        html += `
 
         <button
             class="answer-btn"
@@ -850,150 +880,149 @@ function showTrickyWords(){
 
     `;
 
-    document.body.innerHTML = html;
-}
-
-
-
-function startTrickyTraining(){
-
-    const trickyWords =
-        JSON.parse(
-            localStorage.getItem(
-                "trickyWords"
-            )
-        ) || [];
-
-    const trickyPool =
-        vocabulary.filter(
-            word =>
-            trickyWords.includes(
-                word.english
-            )
-        );
-
-    currentWordPool = trickyPool;
-    alert("Starte Training");
-   
-    currentTrainingPool = trickyPool;
-
-    startRecognize(trickyPool);
-}
-
-
-
-function removeTrickyWord(word){
-
-    let trickyWords =
-        JSON.parse(
-            localStorage.getItem(
-                "trickyWords"
-            )
-        ) || [];
-
-    trickyWords =
-        trickyWords.filter(
-            w => w !== word
-        );
-
-    localStorage.setItem(
-        "trickyWords",
-        JSON.stringify(
-            trickyWords
-        )
-    );
-
-    showTrickyWords();
-}
-
-
-
-function clearTrickyWords(){
-
-    localStorage.removeItem(
-        "trickyWords"
-    );
-
-    showTrickyWords();
-}
-
-
-
-function getAvatar() {
-
-    if(score >= 100)
-        return "🦁 Vocabulary Master";
-
-    if(score >= 50)
-        return "🐺 Word Hunter";
-
-    if(score >= 25)
-        return "🦉 Wise Owl";
-
-    if(score >= 10)
-        return "🦊 Word Fox";
-
-    return "🌱 Rookie";
-}
-
-
-
-function getAvatarEmoji(){
-
-    if(score >= 100)
-        return "🦁";
-
-    if(score >= 50)
-        return "🐺";
-
-    if(score >= 25)
-        return "🦉";
-
-    if(score >= 10)
-        return "🦊";
-
-    return "🌱";
-}
-
-
-
-function toggleDirection(){
-
-    if(direction === "EN_DE"){
-
-        direction = "DE_EN";
-
-    }else{
-
-        direction = "EN_DE";
+        document.body.innerHTML = html;
     }
 
-    localStorage.setItem(
-        "direction",
-        direction
-    );
-
-    renderHomePage();
-}
 
 
+    function startTrickyTraining() {
+
+        const trickyWords =
+            JSON.parse(
+                localStorage.getItem(
+                    "trickyWords"
+                )
+            ) || [];
+
+        const trickyPool =
+            vocabulary.filter(
+                word =>
+                    trickyWords.includes(
+                        word.english
+                    )
+            );
+
+        currentWordPool = trickyPool;
+
+        currentTrainingPool = trickyPool;
+
+        startRecognize(trickyPool);
+    }
 
 
-function renderHomePage() {
 
-    const learningState =
-        JSON.parse(
-            localStorage.getItem(
-                "learningState"
+    function removeTrickyWord(word) {
+
+        let trickyWords =
+            JSON.parse(
+                localStorage.getItem(
+                    "trickyWords"
+                )
+            ) || [];
+
+        trickyWords =
+            trickyWords.filter(
+                w => w !== word
+            );
+
+        localStorage.setItem(
+            "trickyWords",
+            JSON.stringify(
+                trickyWords
             )
         );
 
+        showTrickyWords();
+    }
 
-let continueHtml = "";
 
-if(learningState){
 
-    continueHtml = `
+    function clearTrickyWords() {
+
+        localStorage.removeItem(
+            "trickyWords"
+        );
+
+        showTrickyWords();
+    }
+
+
+
+    function getAvatar() {
+
+        if (score >= 100)
+            return "🦁 Vocabulary Master";
+
+        if (score >= 50)
+            return "🐺 Word Hunter";
+
+        if (score >= 25)
+            return "🦉 Wise Owl";
+
+        if (score >= 10)
+            return "🦊 Word Fox";
+
+        return "🌱 Rookie";
+    }
+
+
+
+    function getAvatarEmoji() {
+
+        if (score >= 100)
+            return "🦁";
+
+        if (score >= 50)
+            return "🐺";
+
+        if (score >= 25)
+            return "🦉";
+
+        if (score >= 10)
+            return "🦊";
+
+        return "🌱";
+    }
+
+
+
+    function toggleDirection() {
+
+        if (direction === "EN_DE") {
+
+            direction = "DE_EN";
+
+        } else {
+
+            direction = "EN_DE";
+        }
+
+        localStorage.setItem(
+            "direction",
+            direction
+        );
+
+        renderHomePage();
+    }
+
+
+
+
+    function renderHomePage() {
+
+        const learningState =
+            JSON.parse(
+                localStorage.getItem(
+                    "learningState"
+                )
+            );
+
+
+        let continueHtml = "";
+
+        if (learningState) {
+
+            continueHtml = `
 
         <div class="progress-card">
 
@@ -1015,10 +1044,10 @@ if(learningState){
                 <br>
 
                 ${learningState.mode === "recognize"
-                ? "🔍 Recognize"
-                : learningState.mode === "recall"
-                    ? "🧠 Recall"
-                    : "✍️ Use It"
+                    ? "🔍 Recognize"
+                    : learningState.mode === "recall"
+                        ? "🧠 Recall"
+                        : "✍️ Use It"
                 }
                 <br>
 
@@ -1035,10 +1064,10 @@ if(learningState){
         </div>
 
     `;
-}
+        }
 
 
-    document.body.innerHTML = `
+        document.body.innerHTML = `
 
         <div class="header">
 
@@ -1084,12 +1113,11 @@ if(learningState){
         <div>⭐</div>
 
         <div class="stat-number">
-            ${
-                JSON.parse(
-                    localStorage.getItem(
-                        "trickyWords"
-                    )
-                )?.length || 0
+            ${JSON.parse(
+            localStorage.getItem(
+                "trickyWords"
+            )
+        )?.length || 0
             }
         </div>
 
@@ -1129,11 +1157,10 @@ if(learningState){
                     class="home-btn"
                     onclick="toggleDirection()">
 
-                    🌍 ${
-                        direction === "EN_DE"
-                        ? "🇬🇧 ➜ 🇩🇪"
-                        : "🇩🇪 ➜ 🇬🇧"
-                    }
+                    🌍 ${direction === "EN_DE"
+                ? "🇬🇧 ➜ 🇩🇪"
+                : "🇩🇪 ➜ 🇬🇧"
+            }
 
                 </button>
 
@@ -1173,6 +1200,48 @@ if(learningState){
 </button>
 
 
+
+<button
+    class="large-btn"
+    onclick="
+        selectUnit(
+            'Unit 2 - Check-in, Station 1'
+        )
+    "
+    style="margin-top:10px;">
+
+    📚 Unit 2 - Station 1
+
+</button>
+
+<button
+    class="large-btn"
+    onclick="
+        selectUnit(
+            'Unit 2 - Station 2, Skills'
+        )
+    "
+    style="margin-top:10px;">
+
+    ✏️ Unit 2 - Skills
+
+</button>
+
+<button
+    class="large-btn"
+    onclick="
+        selectUnit(
+            'Unit 2 - Story, Check-out'
+        )
+    "
+    style="margin-top:10px;">
+
+    📖 Unit 2 - Check-out
+
+</button>
+
+
+
 <button
     class="large-btn"
     onclick="showTrickyWords()"
@@ -1195,82 +1264,82 @@ if(learningState){
         </div>
 
     `;
-}
+    }
 
 
 
-function saveLearningState(){
+    function saveLearningState() {
 
-    localStorage.setItem(
-        "learningState",
+        localStorage.setItem(
+            "learningState",
 
-        JSON.stringify({
+            JSON.stringify({
 
-            unit: currentUnit,
+                unit: currentUnit,
 
-            mode: currentMode,
+                mode: currentMode,
 
-            word: currentWord?.english || null,
+                word: currentWord?.english || null,
 
-            timestamp: Date.now()
+                timestamp: Date.now()
 
-        })
-    );
-}
-
-
-
-function getBadgeCount(){
-
-    let count = 1;
-
-    if(score >= 10)
-        count++;
-
-    if(score >= 25)
-        count++;
-
-    if(score >= 50)
-        count++;
-
-    if(score >= 100)
-        count++;
-
-    return count;
-}
-
-
-
-
-function showStatistics(){
-
-    const trickyWords =
-        JSON.parse(
-            localStorage.getItem(
-                "trickyWords"
-            )
-        ) || [];
-
-    const learningState =
-        JSON.parse(
-            localStorage.getItem(
-                "learningState"
-            )
+            })
         );
+    }
 
-    const totalAnswers =
-        correctAnswers +
-        wrongAnswers;
 
-    const successRate =
-        totalAnswers > 0
-            ? Math.round(
-                correctAnswers /
-                totalAnswers * 100
-            )
-            : 0;
 
-    document.body.innerHTML = `
+    function getBadgeCount() {
+
+        let count = 1;
+
+        if (score >= 10)
+            count++;
+
+        if (score >= 25)
+            count++;
+
+        if (score >= 50)
+            count++;
+
+        if (score >= 100)
+            count++;
+
+        return count;
+    }
+
+
+
+
+    function showStatistics() {
+
+        const trickyWords =
+            JSON.parse(
+                localStorage.getItem(
+                    "trickyWords"
+                )
+            ) || [];
+
+        const learningState =
+            JSON.parse(
+                localStorage.getItem(
+                    "learningState"
+                )
+            );
+
+        const totalAnswers =
+            correctAnswers +
+            wrongAnswers;
+
+        const successRate =
+            totalAnswers > 0
+                ? Math.round(
+                    correctAnswers /
+                    totalAnswers * 100
+                )
+                : 0;
+
+        document.body.innerHTML = `
 
         <div class="learn-card">
 
@@ -1352,84 +1421,113 @@ function showStatistics(){
         </div>
 
     `;
-}
-
-
-
-function resetStatistics(){
-
-    if(
-        !confirm(
-            "Statistik wirklich löschen?"
-        )
-    ){
-        return;
     }
 
-    localStorage.removeItem(
-        "correctAnswers"
-    );
-
-    localStorage.removeItem(
-        "wrongAnswers"
-    );
-
-    correctAnswers = 0;
-    wrongAnswers = 0;
-
-    showStatistics();
-}
 
 
+    function resetStatistics() {
 
-
-
-document.addEventListener(
-    "DOMContentLoaded",
-    async () => {
-
-        try {
-
-            const pickupA =
-                await fetch(
-                    "vocabulary.json"
-                ).then(
-                    r => r.json()
-                );
-
-            const pickupB =
-                await fetch(
-                    "pickUpB.json"
-                ).then(
-                    r => r.json()
-                );
-
-            const unit1 =
-                await fetch(
-                    "unit1.json"
-                ).then(
-                    r => r.json()
-                );
-
-            vocabulary = [
-
-                ...pickupA,
-
-                ...pickupB,
-
-                ...unit1
-
-            ];
-
-            renderHomePage();
-
-        } catch(error){
-
-            console.error(error);
-
-            alert(
-                "Vokabeldatei konnte nicht geladen werden."
-            );
+        if (
+            !confirm(
+                "Statistik wirklich löschen?"
+            )
+        ) {
+            return;
         }
+
+        localStorage.removeItem(
+            "correctAnswers"
+        );
+
+        localStorage.removeItem(
+            "wrongAnswers"
+        );
+
+        correctAnswers = 0;
+        wrongAnswers = 0;
+
+        showStatistics();
     }
-);
+
+
+
+
+
+    document.addEventListener(
+        "DOMContentLoaded",
+        async () => {
+
+            try {
+
+                const pickupA =
+                    await fetch(
+                        "vocabulary.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+                const pickupB =
+                    await fetch(
+                        "pickUpB.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+                const unit1 =
+                    await fetch(
+                        "unit1.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+                const unit2station1 =
+                    await fetch(
+                        "unit2_station1.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+                const unit2skills =
+                    await fetch(
+                        "unit2_skills.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+                const unit2checkout =
+                    await fetch(
+                        "unit2_checkout.json"
+                    ).then(
+                        r => r.json()
+                    );
+
+
+
+                vocabulary = [
+
+                    ...pickupA,
+
+                    ...pickupB,
+
+                    ...unit1,
+
+                    ...unit2station1,
+
+                    ...unit2skills,
+
+                    ...unit2checkout
+
+                ];
+
+                renderHomePage();
+
+} catch (error) {
+
+    console.error(error);
+
+    alert(
+        error.name + "\n\n" +
+        error.message
+    );
+}        }
+    );
